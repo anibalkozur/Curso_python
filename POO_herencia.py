@@ -36,5 +36,5 @@ class Moto(Vehiculos):
     pass
 
 miMoto=Moto("Honda", "CBR")
-
+miMoto.arrancar()
 miMoto.estado()
