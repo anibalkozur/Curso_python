@@ -45,6 +45,13 @@ class Moto(Vehiculos):
             "\nAcelerando", self.acelera,
             "\nFrenando:", self.frena,
             "\n", self.hcaballito)
+        
+class VElectricos():
+    def __init__ (self):
+        self.autonomia=100
+
+    def cargarEnergia(self):
+        self.cargando=(True)
 
 miMoto=Moto("Honda", "CBR")
 miMoto.caballito()#sobrescritura de metodos
@@ -55,3 +62,10 @@ miFurgoneta=Furgoneta("Renault", "Kangoo")
 miFurgoneta.arrancar()
 miFurgoneta.estado()
 print(miFurgoneta.carga(True))
+
+#se puere heredar de dos clases (herencia multple)
+class BicicletaElectrica(VElectricos, Vehiculos):
+    pass
+
+#se da preferencia a la primera clase que se indique
+miBici=BicicletaElectrica()
