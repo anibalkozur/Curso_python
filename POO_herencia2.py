@@ -25,6 +25,14 @@ class Vehiculos():
             "\nAcelerando", self.acelera,
             "\nFrenando:", self.frena)#\n es un salto de linea
 
+class Furgoneta(Vehiculos):
+    def carga(self,cargar):
+        self.cargado=cargar
+        if(self.cargado):
+            return "la furgoneta esta cargada"
+        else:
+            return "la furgoneta no esta cargada"
+
 #heredamos el constructor y cuatro metodos        
 class Moto(Vehiculos):
     hcaballito=""
@@ -39,5 +47,11 @@ class Moto(Vehiculos):
             "\n", self.hcaballito)
 
 miMoto=Moto("Honda", "CBR")
-miMoto.caballito()
+miMoto.caballito()#sobrescritura de metodos
+#el segundo metodo sobreescribe el metodo padre
 miMoto.estado()
+
+miFurgoneta=Furgoneta("Renault", "Kangoo")
+miFurgoneta.arrancar()
+miFurgoneta.estado()
+print(miFurgoneta.carga(True))
