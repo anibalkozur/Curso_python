@@ -15,9 +15,23 @@
 #rfind(): como find pero desde atras, posicion en la que aparece un caracter o cadena de caracteres
 
 #hay mas
-nombreUsuario=input("introduce numero de usuario: ")
+#nombreUsuario=input("introduce numero de usuario: ")
 
-print("El nombre es:", nombreUsuario)                    
-print("El nombre es:", nombreUsuario.upper())  
-print("El nombre es:", nombreUsuario.lower())  
-print("El nombre es:", nombreUsuario.capitalize())  
+#print("El nombre es:", nombreUsuario)                    
+#print("El nombre es:", nombreUsuario.upper())  
+#print("El nombre es:", nombreUsuario.lower())  
+#print("El nombre es:", nombreUsuario.capitalize()) 
+
+#edad=input("Introduce la edad: ")
+#print(edad.isdigit())#True-False
+
+edad=input("Introduce la edad: ")
+
+while(edad.isdigit()==False):
+    print("Por favor, introduce un valor numerico")
+    edad=input("Introduce la edad: ")
+
+if (int(edad)<18):
+    print("No puede pasar")
+else:
+    print("No puede pasar")
