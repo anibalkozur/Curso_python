@@ -15,4 +15,9 @@
 #rfind(): como find pero desde atras, posicion en la que aparece un caracter o cadena de caracteres
 
 #hay mas
+nombreUsuario=input("introduce numero de usuario: ")
 
+print("El nombre es:", nombreUsuario)                    
+print("El nombre es:", nombreUsuario.upper())  
+print("El nombre es:", nombreUsuario.lower())  
+print("El nombre es:", nombreUsuario.capitalize())  
