@@ -6,7 +6,7 @@
 #el uso de las que no se importa
 #from funciones_matematicas import sumar, restar
 
-#se soluciona poniendo un asterisco
+#se soluciona poniendo un asterisco importando todo
 from funciones_matematicas import *
 
 #funciones_matematicas.sumar(7,5)
@@ -15,3 +15,4 @@ from funciones_matematicas import *
 
 sumar(7,5)
 restar(12,5)
+multiplicar(5,6)
