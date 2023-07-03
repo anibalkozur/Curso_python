@@ -25,6 +25,7 @@
 #edad=input("Introduce la edad: ")
 #print(edad.isdigit())#True-False
 
+#ejemplo
 edad=input("Introduce la edad: ")
 
 while(edad.isdigit()==False):
