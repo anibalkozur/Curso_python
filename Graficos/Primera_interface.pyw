@@ -13,6 +13,8 @@ raiz.geometry("650x350")
 
 raiz.config(bg="blue")
 
-
 #es necesario para que se visualice la ventana en un bucle infinito
 raiz.mainloop()
+
+#para que funcione la ventana sin la consola
+#se cambia la extencion .py por pyw
