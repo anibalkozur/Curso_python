@@ -25,29 +25,33 @@ def numeroPulsado(num):
     if operacion!="":
         numeroPantalla.set(num)
         operacion=""
+        print("pase por if")
     else:
-#metodo get, obtiene lo que esta en la variable y le agrega +4
+#metodo get, obtiene lo que esta en la variable mas num ingresado en cadena
         numeroPantalla.set(numeroPantalla.get() + num)
-   
+        print("pase por else")
 #-----------funcion suma-------------
 
 def suma(num):
 
     global operacion, resultado
-
     resultado+=int(num)
     operacion="suma"
-
+    print("pase por suma")
     numeroPantalla.set(resultado)
+
+#-----------funcion resta-------------
+
+def resta(num):
+    
+    pass
 
 #--------------funcion igual--------------
 
 def igual():
 
     global resultado
-
     numeroPantalla.set(resultado+int(numeroPantalla.get()))
-
     resultado=0
 
 #--------------fila 1--------------------
@@ -80,7 +84,7 @@ boton2=Button(miFrame, text="2", width=3, command=lambda:numeroPulsado("2"))
 boton2.grid(row=4, column=2)
 boton3=Button(miFrame, text="3", width=3, command=lambda:numeroPulsado("3"))
 boton3.grid(row=4, column=3)
-botonRest=Button(miFrame, text="-", width=3)
+botonRest=Button(miFrame, text="-", width=3, command=lambda:resta(numeroPantalla.get()))
 botonRest.grid(row=4, column=4)
 
 #--------------fila 4--------------------
