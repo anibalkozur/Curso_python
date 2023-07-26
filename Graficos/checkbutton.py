@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.title("Ejemplo")
+root.title("Check Button")
 
 playa=IntVar()
 montagna=IntVar()
